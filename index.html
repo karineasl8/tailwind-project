@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JK Gym</title>
+    <link rel="icon" href="./img/logoGym.png" type="image/png" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -11,10 +12,10 @@
     <!-- Navbar -->
     <nav class="flex items-center justify-between px-10 py-6">
       <div class="flex items-center space-x-2">
-        <img src="./img/logo.jpg" alt="Logo" class="h-8 w-8" />
+        <img src="./img/logoGym.png" alt="Logo" class="h-8 w-8" />
         <span class="text-orange-500 font-bold text-xl">JK GYM</span>
       </div>
-      <ul class="flex space-x-8">
+      <ul class="hidden sm:flex space-x-8">
         <li>
           <a href="#" class="bg-orange-500 text-black px-3 py-1 rounded"
             >Home</a
@@ -24,9 +25,28 @@
         <li><a href="#" class="hover:text-orange-500">About</a></li>
         <li><a href="#" class="hover:text-orange-500">Contact</a></li>
       </ul>
+
+      <div class="sm:hidden">
+        <button>
+          <svg
+            class="w-8 h-8 text-orange-500"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Header -->
     <section
       class="relative h-screen bg-cover bg-center"
       style="background-image: url('./img/header-bg.jpeg')"
@@ -80,7 +100,7 @@
           class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
         >
           <img
-            src="./img/card1.png"
+            src="./img/card2.png"
             alt="Classic Yoga"
             class="h-[200px] mx-auto mb-4"
           />
@@ -97,7 +117,7 @@
           class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
         >
           <img
-            src="./img/card1.png"
+            src="./img/card3.png"
             alt="Musculation"
             class="h-[200px] mx-auto mb-4"
           />
@@ -113,7 +133,7 @@
           class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
         >
           <img
-            src="./img/card1.png"
+            src="./img/card4.png"
             alt="Fitness Running"
             class="h-[200px] mx-auto mb-4"
           />
@@ -129,7 +149,7 @@
           class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
         >
           <img
-            src="./img/card1.png"
+            src="./img/card5.png"
             alt="Cycling"
             class="h-[200px] mx-auto mb-4"
           />
@@ -146,7 +166,7 @@
           class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
         >
           <img
-            src="./img/card1.png"
+            src="./img/card6.png"
             alt="Body Building"
             class="h-[200px] mx-auto mb-4"
           />
@@ -168,12 +188,11 @@
       </h2>
 
       <div class="mt-10 mb-16">
-        <p class="text-lg font-semibold">
+        <p class="text-lg font-semibold justify-start">
           • WHY <span class="text-orange-500">CHOOSE US ?</span>
         </p>
       </div>
 
-      <!-- Features Grid -->
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto"
       >
@@ -198,7 +217,7 @@
         <!-- Card 2 -->
         <div class="flex flex-col items-center">
           <div
-            class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+            class="bg-gray-600 rounded-full w-16 h-16 flex items-center justify-center mb-4"
           >
             <img src="./img/aboutCard2.png" alt="Nutrition" class="w-8 h-8" />
           </div>
@@ -212,7 +231,7 @@
         <!-- Card 3 -->
         <div class="flex flex-col items-center">
           <div
-            class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+            class="bg-gray-600 rounded-full w-16 h-16 flex items-center justify-center mb-4"
           >
             <img
               src="./img/aboutCard3.png"
@@ -230,7 +249,7 @@
         <!-- Card 4 -->
         <div class="flex flex-col items-center">
           <div
-            class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+            class="bg-gray-600 rounded-full w-16 h-16 flex items-center justify-center mb-4"
           >
             <img src="./img/aboutCard4.png" alt="Unique Plan" class="w-8 h-8" />
           </div>
@@ -242,5 +261,175 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact Us  -->
+    <section class="py-12 px-4 max-w-7xl mx-auto mb-12">
+      <h2 class="text-center text-3xl font-bold mb-10">
+        Contact us
+        <div class="w-32 h-1 bg-orange-500 mx-auto mt-2"></div>
+      </h2>
+      <div class="flex flex-col lg:flex-row gap-20">
+        <div class="bg-[#1f1f1f] p-8 rounded-xl flex-1">
+          <form class="space-y-4">
+            <div>
+              <label class="block text-orange-500 font-semibold mb-1"
+                >Name :</label
+              >
+              <input
+                type="text"
+                class="w-full rounded-full bg-transparent border border-orange-500 px-4 py-2 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-orange-500 font-semibold mb-1"
+                >Mobile :</label
+              >
+              <input
+                type="text"
+                class="w-full rounded-full bg-transparent border border-orange-500 px-4 py-2 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-orange-500 font-semibold mb-1"
+                >Message :</label
+              >
+              <textarea
+                rows="4"
+                class="w-full rounded-xl bg-transparent border border-orange-500 px-4 py-2 focus:outline-none"
+              ></textarea>
+            </div>
+          </form>
+        </div>
+
+        <div class="flex-1 space-y-8">
+          <div class="flex items-start gap-4">
+            <div
+              class="bg-orange-500 w-12 p-2 rounded-full flex items-center justify-center"
+            >
+              <img src="./img/info/maps-and-flags.png" alt="Location" />
+            </div>
+            <p class="text-orange-500 font-medium tracking-wide">
+              New C.G. Road, Chandkheda,<br />
+              Ahmedabad - 382421
+            </p>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-orange-500 w-12 p-2 rounded-full flex items-center justify-center"
+            >
+              <img src="./img/info/phone-call.png" alt="Phone" />
+            </div>
+            <p class="text-orange-500 font-medium">+91 12343 12342</p>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div
+              class="bg-orange-500 w-12 p-2 rounded-full flex items-center justify-center"
+            >
+              <img src="./img/info/email.png" alt="Email" />
+            </div>
+            <p class="text-orange-500 font-medium tracking-wide">
+              jkgym@gmail.com
+            </p>
+          </div>
+
+          <div>
+            <p class="text-orange-500 font-medium mb-2">Follow for more :</p>
+            <div class="flex gap-4">
+              <a href="#"
+                ><img
+                  src="./img/socials/instagram.png"
+                  class="bg-orange-500 p-2 rounded-xl w-12"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./img/socials/facebook.png"
+                  class="bg-orange-500 p-2 rounded-xl w-12"
+              /></a>
+              <a href="#"
+                ><img
+                  src="./img/socials/twitter.png"
+                  class="bg-orange-500 p-2 rounded-xl w-12"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#943a00] text-white">
+      <div
+        class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm"
+      >
+        <div>
+          <h3 class="font-bold mb-3">Quick Links</h3>
+          <ul class="space-y-2 text-white/80">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-3">Services</h3>
+          <ul class="space-y-2 text-white/80">
+            <li>Weight Loss</li>
+            <li>Classic Yoga</li>
+            <li>Musculation</li>
+            <li>Fitness Running</li>
+            <li>Cycling</li>
+            <li>Body Building</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-3">Plans</h3>
+          <ul class="space-y-2 text-white/80">
+            <li>3 Months</li>
+            <li>6 Months</li>
+            <li>12 Months</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-3">Follow</h3>
+          <div class="flex gap-3">
+            <a href="#"
+              ><img
+                src="./img/socials/instagram.png"
+                class="bg-orange-500 p-2 rounded-xl w-12"
+                alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/socials/facebook.png"
+                class="bg-orange-500 p-2 rounded-xl w-12"
+                alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img
+                src="./img/socials/twitter.png"
+                class="bg-orange-500 p-2 rounded-xl w-12"
+                alt="Twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-700 text-center text-white text-md py-2">
+        <span class="flex items-center justify-center gap-1">
+          <span class="text-lg">©</span>
+          <span
+            >2025 COPYRIGHTS ALL RIGHTS RESERVED BY
+            <strong class="text-orange-600">JK GYM</strong></span
+          >
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
