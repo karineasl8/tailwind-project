@@ -3,7 +3,244 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JK Gym</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+
+  <body class="bg-black text-white font-sans">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-10 py-6">
+      <div class="flex items-center space-x-2">
+        <img src="./img/logo.jpg" alt="Logo" class="h-8 w-8" />
+        <span class="text-orange-500 font-bold text-xl">JK GYM</span>
+      </div>
+      <ul class="flex space-x-8">
+        <li>
+          <a href="#" class="bg-orange-500 text-black px-3 py-1 rounded"
+            >Home</a
+          >
+        </li>
+        <li><a href="#" class="hover:text-orange-500">Service</a></li>
+        <li><a href="#" class="hover:text-orange-500">About</a></li>
+        <li><a href="#" class="hover:text-orange-500">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-screen bg-cover bg-center"
+      style="background-image: url('./img/header-bg.jpeg')"
+    >
+      <div
+        class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-start px-16"
+      >
+        <div class="max-w-md">
+          <h1 class="text-4xl font-bold text-orange-500 mb-4 flex">
+            STRONGER, HEALTHIER, HAPPIER
+          </h1>
+          <p class="text-xl mb-6">WHERE FITNESS MEETS RESULTS"</p>
+          <a
+            href="#"
+            class="bg-orange-500 text-black px-6 py-3 rounded font-semibold hover:bg-orange-600"
+            >JOIN NOW</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Our services -->
+    <section class="py-16 px-4 text-center">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        OUR SERVICES
+        <div class="w-52 h-1 bg-orange-500 mx-auto mt-2"></div>
+      </h2>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto"
+      >
+        <!-- Card 1-->
+        <div
+          class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
+        >
+          <img
+            src="./img/card1.png"
+            alt="Weight Loss"
+            class="h-[200px] mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">Weight Loss</h3>
+          <p class="text-sm">
+            Weight loss can have causes that aren't due to underlying disease.
+            Examples include dieting, exercise, malnutrition or lack of access
+            to food.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
+        >
+          <img
+            src="./img/card1.png"
+            alt="Classic Yoga"
+            class="h-[200px] mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">Classic Yoga</h3>
+          <p class="text-sm">
+            Weight loss can have causes that aren't due to underlying disease.
+            Examples include dieting, exercise, malnutrition or lack of access
+            to food.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
+        >
+          <img
+            src="./img/card1.png"
+            alt="Musculation"
+            class="h-[200px] mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">Musculation</h3>
+          <p class="text-sm">
+            Weight training is a common type of strength training for developing
+            the strength, size of skeletal muscles and maintenance of strength.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
+        >
+          <img
+            src="./img/card1.png"
+            alt="Fitness Running"
+            class="h-[200px] mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">Fitness Running</h3>
+          <p class="text-sm">
+            Running is a method of terrestrial locomotion allowing humans and
+            other animals to move rapidly on foot.
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
+        >
+          <img
+            src="./img/card1.png"
+            alt="Cycling"
+            class="h-[200px] mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">Cycling</h3>
+          <p class="text-sm">
+            Weight loss can have causes that aren't due to underlying disease.
+            Examples include dieting, exercise, malnutrition or lack of access
+            to food.
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-gradient-to-b from-orange-500 to-orange-700 text-center p-8 rounded-xl shadow-lg"
+        >
+          <img
+            src="./img/card1.png"
+            alt="Body Building"
+            class="h-[200px] mx-auto mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">Body Building</h3>
+          <p class="text-sm">
+            Weight loss can have causes that aren't due to underlying disease.
+            Examples include dieting, exercise, malnutrition or lack of access
+            to food.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="py-16 px-4 text-center">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        ABOUT US
+        <div class="w-36 h-1 bg-orange-500 mx-auto mt-2"></div>
+      </h2>
+
+      <div class="mt-10 mb-16">
+        <p class="text-lg font-semibold">
+          • WHY <span class="text-orange-500">CHOOSE US ?</span>
+        </p>
+      </div>
+
+      <!-- Features Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto"
+      >
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+          >
+            <img
+              src="./img/aboutCard1.png"
+              alt="Modern Equipment"
+              class="w-8 h-8"
+            />
+          </div>
+          <h3 class="font-bold uppercase mb-2">Modern Equipment</h3>
+          <p class="text-sm text-gray-300 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+          >
+            <img src="./img/aboutCard2.png" alt="Nutrition" class="w-8 h-8" />
+          </div>
+          <h3 class="font-bold uppercase mb-2">Healthy Nutrition Plan</h3>
+          <p class="text-sm text-gray-300 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+          >
+            <img
+              src="./img/aboutCard3.png"
+              alt="Training Plan"
+              class="w-8 h-8"
+            />
+          </div>
+          <h3 class="font-bold uppercase mb-2">Professional Training Plan</h3>
+          <p class="text-sm text-gray-300 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center">
+          <div
+            class="bg-gray-800 rounded-full w-16 h-16 flex items-center justify-center mb-4"
+          >
+            <img src="./img/aboutCard4.png" alt="Unique Plan" class="w-8 h-8" />
+          </div>
+          <h3 class="font-bold uppercase mb-2">Unique to Your Needs</h3>
+          <p class="text-sm text-gray-300 max-w-xs">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut dolore facilisis.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
